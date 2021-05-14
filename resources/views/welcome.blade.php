@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Cooperando S.A</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -18,6 +18,7 @@
                 font-weight: 200;
                 height: 100vh;
                 margin: 0;
+                font-size: 5px;
             }
 
             .full-height {
@@ -44,14 +45,25 @@
                 text-align: center;
             }
 
-            .title {
-                font-size: 84px;
+            .h1{
+                font-size: 100px;
             }
+
+            .links1 > a {
+                color: #636b6f;
+                padding: 0 25px;
+                font-size: 40px;
+                font-weight: 600;
+                letter-spacing: .1rem;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+            
 
             .links > a {
                 color: #636b6f;
                 padding: 0 25px;
-                font-size: 13px;
+                font-size: 20px;
                 font-weight: 600;
                 letter-spacing: .1rem;
                 text-decoration: none;
@@ -68,12 +80,12 @@
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
-                        <a href="{{ url('/home') }}">Home</a>
+                        <a href="{{ url('/home') }}">Inicio</a>
                     @else
                         <a href="{{ route('login') }}">Iniciar Sesion</a>
 
                         @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Registrarse</a>
+                            <a href="{{ route('register') }} ">Registrarse</a>
                         @endif
                     @endauth
                 </div>
@@ -81,21 +93,21 @@
 
             <div class="content">          
                 
-                <div class="links">
-            <a href="{{ url('/home') }}"><h1>Cooperando</h1> </a>
+                <div class="links1">
+                    
+            <a href="{{ url('/home') }}" ><h1>Cooperando</h1></a>
                     </div>
                         
             
 
                 <div class="links">
                 
-                <a href="">Encontranos en</a>
-                <br>
-                <br>
-                    <a href="https://Facebook.com">Facebook</a>
-                    <a href="https://twitter.com">Twitter</a>
-                    <a href="https://youtube.com">YouTube</a>
-                    <a href="https://github.com/">GitHub</a>
+                <a href=""><h4>Encontranos en</h4></a>
+                
+                    <a href="https://Facebook.com"><h7>Facebook</h7></a>
+                    <a href="https://twitter.com"><h7>Twitter</h7></a>
+                    <a href="https://youtube.com"><h7>YouTube</h7></a>
+                    <a href="https://github.com/"><h7>GitHub</h7></a>
                 </div>
             </div>
         </div>
