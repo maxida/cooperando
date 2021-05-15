@@ -1,6 +1,6 @@
 <!-- Nombre Field -->
 <div class="form-group">
-    {!! Form::label('nombre', 'Nombre:') !!}
+    {!! Form::label('nombre', 'nombre:') !!}
     <p>{{ $asistenteSocial->nombre }}</p>
 </div>
 

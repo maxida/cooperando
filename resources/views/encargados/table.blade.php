@@ -3,17 +3,17 @@
         <thead>
             <tr>
                 <th>Name</th>
-        <th>Dni</th>
-        <th>Direccion</th>
-        <th>Telefono</th>
-        <th>Foto</th>
+                <th>Dni</th>
+                <th>Direccion</th>
+                <th>Telefono</th>
+                <th>Foto</th>
                 <th colspan="3">Action</th>
             </tr>
         </thead>
         <tbody>
         @foreach($encargados as $encargado)
             <tr>
-                <td>{{ $encargado->name }}</td>
+            <td>{{ $encargado->name }}</td>
             <td>{{ $encargado->dni }}</td>
             <td>{{ $encargado->direccion }}</td>
             <td>{{ $encargado->telefono }}</td>

@@ -28,6 +28,4 @@ Route::resource('encargados', 'EncargadoController');
 
 Route::resource('niños', 'NiñoController');
 
-
-
 Route::resource('asistenteSocials', 'AsistenteSocialController');
